@@ -24,9 +24,9 @@
     "name": {
       "type": "string"
     },
-    "action": {
-      "via": "season",
-      "model": "actions"
+    "actions": {
+      "collection": "actions",
+      "via": "season"
     }
   }
 }

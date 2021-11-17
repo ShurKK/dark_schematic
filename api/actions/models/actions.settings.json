@@ -22,10 +22,6 @@
       "required": true,
       "unique": true
     },
-    "season": {
-      "model": "seasons",
-      "via": "action"
-    },
     "time_in_episode": {
       "type": "time"
     },
@@ -58,6 +54,10 @@
     },
     "timetravel_to": {
       "type": "datetime"
+    },
+    "season": {
+      "via": "actions",
+      "model": "seasons"
     }
   }
 }
