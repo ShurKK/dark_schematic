@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actions",
+  "info": {
+    "name": "Actions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "characters": {
+      "via": "actions",
+      "collection": "character",
+      "dominant": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "season": {
+      "model": "seasons",
+      "via": "action"
+    },
+    "time_in_episode": {
+      "type": "time"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "date_and_time": {
+      "type": "datetime"
+    },
+    "world": {
+      "type": "enumeration",
+      "enum": [
+        "Johnas",
+        "Second",
+        "Initial"
+      ]
+    },
+    "episode": {
+      "via": "actions",
+      "model": "episodes"
+    },
+    "timetravel_to": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "episodes",
+  "info": {
+    "name": "Episodes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "number": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "default": -1
+    },
+    "name": {
+      "type": "string"
+    },
+    "season": {
+      "via": "episodes",
+      "model": "seasons"
+    },
+    "actions": {
+      "via": "episode",
+      "collection": "actions"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "characters_relations",
+  "info": {
+    "name": "Characters_Relations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "relation_type": {
+      "type": "enumeration",
+      "enum": [
+        "mother",
+        "father",
+        "sister",
+        "brother",
+        "grandfather",
+        "grandmother",
+        "spouse",
+        "gf",
+        "bf",
+        "lover",
+        "cousin",
+        "ex",
+        "self_but_older",
+        "self_but_younger"
+      ]
+    },
+    "who": {
+      "model": "character"
+    },
+    "to_who": {
+      "model": "character"
+    },
+    "episode": {
+      "model": "episodes"
+    },
+    "season": {
+      "model": "seasons"
+    },
+    "date_and_time": {
+      "type": "datetime"
+    },
+    "time_in_episode": {
+      "type": "time"
+    }
+  }
+}

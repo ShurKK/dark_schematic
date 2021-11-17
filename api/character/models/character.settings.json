@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "characters",
+  "info": {
+    "name": "Character",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Portrait": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "actions": {
+      "via": "characters",
+      "collection": "actions"
+    },
+    "becomes_known_episode": {
+      "model": "episodes"
+    },
+    "becomes_known_season": {
+      "model": "seasons"
+    }
+  }
+}

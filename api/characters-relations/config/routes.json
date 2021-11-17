@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/characters-relations",
+      "handler": "characters-relations.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/characters-relations/count",
+      "handler": "characters-relations.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/characters-relations/:id",
+      "handler": "characters-relations.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/characters-relations",
+      "handler": "characters-relations.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/characters-relations/:id",
+      "handler": "characters-relations.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/characters-relations/:id",
+      "handler": "characters-relations.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
