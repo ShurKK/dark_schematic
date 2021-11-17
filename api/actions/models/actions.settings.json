@@ -19,7 +19,8 @@
     },
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "season": {
       "model": "seasons",
