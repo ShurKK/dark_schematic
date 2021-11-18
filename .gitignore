@@ -116,3 +116,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+yarn.lock
+
+# static images directory
+public/uploads/
+
+
+.DS_Store
+
+.strapi-updater.json
+
+
+.tmp/
