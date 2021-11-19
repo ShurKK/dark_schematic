@@ -17,6 +17,8 @@
       "enum": [
         "mother",
         "father",
+        "son",
+        "daughter",
         "sister",
         "brother",
         "grandfather",

@@ -37,6 +37,9 @@
     },
     "becomes_known_season": {
       "model": "seasons"
+    },
+    "general_bio": {
+      "type": "richtext"
     }
   }
 }

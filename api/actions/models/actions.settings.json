@@ -58,6 +58,9 @@
     "season": {
       "via": "actions",
       "model": "seasons"
+    },
+    "Description": {
+      "type": "richtext"
     }
   }
 }

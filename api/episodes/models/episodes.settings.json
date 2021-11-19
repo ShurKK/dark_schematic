@@ -16,7 +16,7 @@
       "type": "integer",
       "required": true,
       "unique": true,
-      "default": -1
+      "default": 1
     },
     "name": {
       "type": "string"
