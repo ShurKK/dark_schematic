@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bio_updates",
+  "info": {
+    "name": "Bio_updates",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "episode": {
+      "via": "bio_updates",
+      "model": "episodes"
+    },
+    "season": {
+      "model": "seasons",
+      "via": "bio_updates"
+    },
+    "character": {
+      "model": "character",
+      "via": "bio_updates"
+    },
+    "bio_update_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "photo_update": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

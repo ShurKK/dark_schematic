@@ -28,6 +28,22 @@
     "actions": {
       "via": "episode",
       "collection": "actions"
+    },
+    "bio_updates": {
+      "via": "episode",
+      "collection": "bio-updates"
+    },
+    "thumb": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

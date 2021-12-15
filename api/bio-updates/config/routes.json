@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bio-updates",
+      "handler": "bio-updates.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bio-updates/count",
+      "handler": "bio-updates.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bio-updates/:id",
+      "handler": "bio-updates.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bio-updates",
+      "handler": "bio-updates.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bio-updates/:id",
+      "handler": "bio-updates.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bio-updates/:id",
+      "handler": "bio-updates.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

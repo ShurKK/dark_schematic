@@ -40,6 +40,10 @@
     },
     "general_bio": {
       "type": "richtext"
+    },
+    "bio_updates": {
+      "via": "character",
+      "collection": "bio-updates"
     }
   }
 }

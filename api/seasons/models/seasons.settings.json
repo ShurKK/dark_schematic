@@ -27,6 +27,10 @@
     "actions": {
       "via": "season",
       "collection": "actions"
+    },
+    "bio_updates": {
+      "via": "season",
+      "collection": "bio-updates"
     }
   }
 }

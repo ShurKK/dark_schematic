@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_seo_heroes",
+  "info": {
+    "name": "hero",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
