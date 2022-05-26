@@ -2,7 +2,7 @@
   "name": "dark-schematic",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Website dedicated to Netflix Dark Series",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -27,7 +27,7 @@
     "strapi-utils": "3.6.8"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Alexaner Revtov"
   },
   "strapi": {
     "uuid": "207d01a2-e2d9-499e-9f0e-01c51955e844"

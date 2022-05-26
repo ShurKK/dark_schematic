@@ -39,6 +39,13 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "name_update": {
+      "type": "string"
+    },
+    "photo_update_year": {
+      "type": "datetime",
+      "default": "2019-11-05T11:00:00.000Z"
     }
   }
 }
